@@ -1,0 +1,321 @@
+﻿/*
+
+    стили блоков, элемонтов и модификаторов мэйна
+
+    fixed-container_main-section-aside - особые настройки для асайда - более маленькие размеры контейнера центровщика, выранивание слева
+    main - выравниваем контент по центру (горизонт)
+    main-section - большие блоки с контентм
+    main-section_aside - модификатор для асайда (вводим задний фон с градиентом)
+    main-section_portfolio - отступ сверху для портфолио
+    main-section__contetnt-title - элемент заголовков каждой секци мэйна
+    main-activity-button - особые размеры для обычной кнопки (этот блок среди общих) но для мэйна
+    activity - отодвигаем список "что я делаю"
+    activity-item - общие настройки для каждой картачки с картиками и подписями "что я делаю"
+    activity-item_layout-landing - конкретная настройка карточки с картинкой
+    activity-item_layout-adaptive - конкретная настройка карточки с картинкой
+    activity-item_front-and - конкретная настройка карточки с картинкой
+    activity-item_correction - конкретная настройка карточки с картинкой
+    activity-item__info - подпись у карточки с картинкой
+    swiper-container - большой блок для хранения всех элементов карусели
+    swiper-wrapper - список из слайдом (сам слайдер по сути или его обертка)
+    swiper-wrapper__item - конкретный слайд с картинкой и описанием
+    swiper-wrapper__figure - фигура (спец элемент включающий и картинку и описание к ней)
+    swiper-wrapper__photo - нету ничего..., но по идее это настройки для картинки (понадобится в будущем?)
+    swiper-wrapper__info - подпись к картинкам слайдера
+    swiper-pagination - пагинация под слайдером (для десктопа не активирована)
+    swiper-pagination__button - настройка каждой кнопки пагинации (находится в адаптиве)
+    swiper-pagination__button_select - настройка для выбранной в данный момент кнопки слайдера (находитс в адаптиве)
+    aside-text - большой текст в асайде
+    aside-text-desc - особый блок для хранения подтеста у асайда (сдвиг влево для этого текста)
+    aside-text-desc__small - настройки самомго текста подтектса у асайда, а также * слева
+    aside-text-desc__word-wrap - разрыв строки (нет стилей)
+    swiper-button - элемент списка - орган управления карусели
+    swiper-button__type - общие настрокй каждой кнопки органа управления карусели
+    swiper-button__type_next - конкретная кнопка "вправо" для слайдера
+    swiper-button__type_prev - конкретная кнопка "влево" для слайдера
+
+    Летающие тэги:
+    header-flying-tags_all - все детающие тэги хидера
+    header-flying-tags_bracket
+    header-flying-tags_div 
+    header-flying-tags_octothorpe 
+    header-flying-tags_div_second 
+    header-flying-tags_slash 
+
+*/
+
+
+.fixed-container_main-section-aside {
+    width: 100%;
+    max-width: 943px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0;
+}
+
+.main {
+    text-align: center;
+}
+
+.main-section {
+    padding-top: 86px;
+    padding-bottom: 102px;
+}
+
+.main-section_aside {
+    background: linear-gradient( 11deg, #ff8f5a 11%, #ff2f96);
+    padding-top: 75px;
+    padding-bottom: 64px;
+
+    position: relative;
+}
+
+.main-section_portfolio {
+    padding-top: 88px;
+}
+
+.main-section__contetnt-title {
+    margin: 0;
+    text-align: center;
+    font-size: 54px;
+}
+
+.main-activity-button {
+    padding: 19px 58px;
+}
+
+.activity {
+    margin-left: 0;
+    margin-top: 88px;
+    padding-left: 0;
+    margin-bottom: 73px;
+}
+
+.activity-item {
+    background-position: center top;
+    background-size: 75px;
+    background-repeat: no-repeat;
+    list-style-type: none;
+    width: 258px;
+    text-align: center;
+}
+
+.activity-item_layout-landing {
+    background-image: url("../img/main/tools-and-utensils-svg.svg");
+}
+
+.activity-item_layout-adaptive {
+    background-image: url("../img/main/responsive-svg.svg");
+}
+
+.activity-item_front-and {
+    background-image: url("../img/main/programming-svg.svg");
+}
+
+.activity-item_correction {
+    background-image: url("../img/main/coding-svg.svg");
+}
+
+.activity-item__info {
+    margin-top: 93px;
+    font-size: 20px;
+    color: #8993ad;
+    line-height: 1.5em;
+}
+
+.swiper-container {
+    position: relative;
+    z-index: 1;
+}
+
+.swiper-wrapper {
+    margin-top: 100px;
+    margin-bottom: 94px;
+    padding: 0;
+}
+
+.swiper-wrapper__item {
+    list-style-type: none;
+    width: 369px;
+    text-align: center;
+}
+
+.swiper-wrapper__figure {
+    margin: 0;
+}
+
+.swiper-wrapper__info {
+    margin-top: 31px;
+    font-size: 20px;
+    color: #8993ad;
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+.swiper-button {
+    list-style-type: none;
+}
+
+.swiper-button__type {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.swiper-button__type_next {
+    top: 113px;
+    right: -37px;
+    transform: rotate( 180deg );
+}
+
+.swiper-button__type_next:after {
+    content: url(../img/main/arrow.png);
+}
+
+.swiper-button__type_prev {
+    top: 117px;
+    left: -37px;
+}
+
+.swiper-button__type_prev:after {
+    content: url(../img/main/arrow.png);
+}
+
+.aside-text {
+    margin: 0;
+    margin-bottom: 31px;
+    font-size: 45px;
+    color: #fff;
+    line-height: 59px;
+    letter-spacing: 0.25px;
+}
+
+.aside-text-desc {
+    padding-left: 14px;
+}
+
+.aside-text-desc__small {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.7;
+}
+
+.aside-text-desc__small:before {
+    content: '*';
+    margin-left: -13px;
+}
+
+
+/*
+    летающие тэги асайда
+*/
+
+.aside-flying-tags_all {
+    position: absolute;
+    color: #fff;
+}
+
+.aside-flying-tags_bracket {
+    top: 12px;
+    left: 165px;
+    font-size: 46px;
+    transform: rotate(0.06turn);
+    animation: aside-flying-tags_bracket-anim 2s 1 ease-in-out;
+}
+.aside-flying-tags_div {
+    top: 258px;
+    left: 1455px;
+    font-size: 41px;
+    transform: rotate(0.06turn);
+    animation: aside-flying-tags_div-anim 2s 1 ease-in-out;
+}
+.aside-flying-tags_octothorpe {
+    top: 198px;
+    left: 282px;
+    font-size: 50px;
+    transform: rotate(0.06turn);
+    animation: aside-flying-tags_octothorpe-anim 2s 1 ease-in-out;
+}
+.aside-flying-tags_bracket-second {
+    top: 211px;
+    left: 1802px;
+    font-size: 46px;
+    transform: rotate( -0.05turn );
+    animation: aside-flying-tags_bracket-second-anim 2s 1 ease-in-out;
+}
+.aside-flying-tags_slash {
+    top: 32px;
+    left: 1690px;
+    font-size: 41px;
+    transform: rotate( 0.95turn );
+    animation: aside-flying-tags_slash-anim 2s 1 ease-in-out;
+}
+
+
+@keyframes aside-flying-tags_bracket-anim {
+    from {
+        top: -30px;
+        left: -50px;
+    }
+
+    to {
+        top: 12px;
+        left: 165px;
+        transform: rotate(0.06turn);
+    }
+}
+
+@keyframes aside-flying-tags_div-anim {
+    from {
+        top: 710px;
+        left: 1755px;
+    }
+
+    to {
+        top: 258px;
+        left: 1455px;
+        transform: rotate(0.06turn);
+    }
+}
+
+@keyframes aside-flying-tags_octothorpe-anim {
+    from {
+        top: 310px;
+        left: -60px;
+    }
+
+    to {
+        top: 198px;
+        left: 282px;
+        transform: rotate(0.06turn);
+    }
+}
+
+@keyframes aside-flying-tags_bracket-second-anim {
+    from {
+        top: 120px;
+        left: 2100px;
+    }
+
+    to {
+        top: 211px;
+        left: 1802px;
+        transform: rotate( -0.05turn );
+    }
+}
+
+@keyframes aside-flying-tags_slash-anim {
+    from {
+        top: 100px;
+        left: 2100px;
+    }
+
+    to {
+        top: 32px;
+        left: 1690px;
+    }
+}

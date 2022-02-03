@@ -1,0 +1,8 @@
+.swiper-button__type_prev {
+    top: 117px;
+    left: -37px;
+}
+
+    .swiper-button__type_prev:after {
+        content: url(../../../../../img/main/arrow.png);
+    }

@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="815"
+     height="630"
+     xmlns="http://www.w3.org/2000/svg"
+     version="1.1">
+    
+    <linearGradient id="gradient" x2="0%" y2="100%">
+        <stop offset="0" stop-color="#ff2f96"></stop>
+        <stop offset="100%" stop-color="#f6845b"></stop>
+    </linearGradient>
+	
+
+    <g id="car-dodger" transform="scale(1.0)">
+        
+<!--   Очертание фигуры линиями <path d="M20 630 L 0 560 L 565 0 L 815 120 V 630 L 20 630" stroke="black" fill="transparent"/>-->
+        
+        
+        <path d="M20 630
+                 C 20 630, 10 630, 2 560
+                 S 200 10, 565 4
+                 C 565 4, 700 0, 815 120
+                 V 630
+                 L 20 630"
+              stroke="transparent"
+              fill="url(#gradient)"/>
+	</g>
+</svg>    
+
+
+

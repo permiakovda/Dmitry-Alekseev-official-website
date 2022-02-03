@@ -1,0 +1,8 @@
+.swiper-button__type {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+
+    cursor: pointer;
+    z-index: 10;
+}

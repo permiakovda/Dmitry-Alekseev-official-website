@@ -1,0 +1,10 @@
+.header-about-me{
+    padding-top: 57px;
+    padding-bottom: 0px;
+    display: flex;
+
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-right: -82px;
+
+}
