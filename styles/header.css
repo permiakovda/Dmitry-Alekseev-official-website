@@ -15,7 +15,7 @@
     header-about-me__photo - дисплай блок для фотографии (корректировка размеров для фотографии, что бы были точные размеры)
 
     Летающие тэги:
-    header-flying-tags_all - все детающие тэги хидера
+    header-flying-tags_all - все летающие тэги хидера
     header-flying-tags_bracket
     header-flying-tags_div 
     header-flying-tags_octothorpe 
@@ -33,8 +33,6 @@
     background-repeat: no-repeat;
     background-position: calc(50% + 555px) bottom;
     background-color: #fbfbfb;
-
-    position: relative;
 }
 
 .nav-menu {
@@ -63,6 +61,12 @@
     margin-right: 28px;
     list-style-type: none;
     display: inline-block;
+    border-bottom: 1px solid rgba(252, 85, 124, 0);
+}
+
+.nav-menu-list__item:hover {
+    color: rgba(252, 85, 124, 1);
+    border-bottom: 1px solid rgba(252, 85, 124, 1);
 }
 
 .nav-menu-list__item:first-child {
