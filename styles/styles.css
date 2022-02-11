@@ -81,6 +81,12 @@ a {
 	text-align: center;
 	border: 1px solid #f53f4f;
 	color: #f53f4f;
+	transition: 0.3s ease;
+}
+
+.button:hover{
+	background-color: #ff4e2e;
+	color: #fff;
 }
 
 .button_orange {
@@ -89,7 +95,14 @@ a {
 	background: #ff4e2e;
 	color: #FFF;
 	font-size: 18px;
+	transition: 0.3s ease;
 }
+
+.button_orange:hover {
+	background-color: #fff;
+	color: #ff4e2e;
+}
+
 .button_footer-request {
 	display: inline-block;
 	padding: 12px 60px;
