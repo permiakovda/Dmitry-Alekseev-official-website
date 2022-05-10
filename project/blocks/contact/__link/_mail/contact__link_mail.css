@@ -1,0 +1,7 @@
+.contact__link_mail {
+    padding-left: 50px;
+    background: url("../../../../../img/footer/envelope-svg.svg");
+    background-size: 19px;
+    background-repeat: no-repeat;
+    background-position: left 7px center;
+}

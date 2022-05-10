@@ -1,0 +1,8 @@
+.button_orange{
+    display: inline-block;
+    padding: 19px 71px;
+    
+    background: #ff4e2e;
+    color: #FFF;
+    font-size: 18px;
+}

@@ -1,0 +1,28 @@
+/* 
+font-display - регулирует будет ли системный шрифт невидимыфм и стоит ли ждать загрузки пользовательского шрифта 
+src: local - попробовать найти шрифт на машине пользователя
+url(data:application/font-woff2;charset=utf-8;base64 - шрифт в виде кода - таким образом можно уже через CSS загрузить часть шрифта, например основную необходимую ччасть, а браузер её сделает жирной и курсивной сам, а потом когда подгрузятся нормальыне шрифты (жирный и курсивный), заменит на необходимое
+format("woff2") - формат шрифта woff2 - самый совершенный и хорошо сжатый интернет шрифт
+*/
+
+/* roboto - regular */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Roboto"), local("Roboto-Regular"),
+        url("../fonts/roboto-400.woff2") format("woff2"),
+        url("../fonts/roboto-400.woff") format("woff");
+}
+
+/* roboto - bold */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Roboto Bold"), local("Roboto-Bold"),
+        url("../fonts/roboto-700.woff2") format("woff2"),
+        url("../fonts/roboto-700.woff") format("woff");
+}

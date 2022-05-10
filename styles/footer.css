@@ -1,0 +1,156 @@
+﻿/*
+
+    стили для блоков, элементов и модификаторов (БЭМ сущностей) футера
+
+    footer - отступ сверху для футера
+    footer__copyright - настройка полоски в самом низу
+    footer-content - не использууется?
+    footer-nav - меню футера (список)
+    footer-nav__item - элемент списка для меню футера
+    footer-contacts - настройка блока с телефоном и почтой (контакты)
+    contacts - список контактов
+    contact - элемент списка контактов
+    contact__link - настройка сслыки для контактов (общая)
+    contact__link_mail - настройка почты
+    contact__link_phon - настройка телефона
+    footer-request-social - блок содержащий кнопку (заказать звонок) и сслыки на соц сети
+    social-group - список на соц сети
+    social-group-item - элемент списка соц сетей (в том числе настройка первого ребенка)
+    social-group-item__link - общие настройки каждой ссылки на соц сети
+    social-group-item__link_facebook - конкретно для соц сети
+    social-group-item__link_instagram - конкретно для соц сети
+    social-group-item__link_twitter - конкретно для соц сети
+    social-group-item__link_vk - конкретно для соц сети
+
+*/
+
+.footer {
+    padding-top: 76px;
+}
+
+.footer__copyright {
+    margin-top: 54px;
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 29px;
+    padding-bottom: 33px;
+    background-color: #31293c;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-nav {
+    margin: 0;
+    margin-top: 5px;
+    padding-left: 0;
+}
+
+.footer-nav__item {
+    list-style-type: none;
+    font-size: 19px;
+    margin-bottom: 10px;
+    color: #8993ad;
+    transition: 0.3s ease;
+}
+
+.footer-nav__item:hover {
+    color: rgba(252, 85, 124, 1);
+}
+
+.footer-contacts {
+    flex-basis: 390px;
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 85px;
+    padding: 0;
+    font-size: 25px;
+    list-style-type: none;
+}
+
+.contacts {
+    margin: 0;
+    padding: 0;
+}
+
+.contact {
+    margin-bottom: 29px;
+    list-style-type: none;
+}
+
+.contact__link {
+    font-style: normal;
+    transition: 0.3s ease;
+}
+
+.contact__link:hover {
+    color: #fc557c;
+}
+
+.contact__link_mail {
+    padding-left: 50px;
+    background: url("../img/footer/envelope-svg.svg");
+    background-size: 19px;
+    background-repeat: no-repeat;
+    background-position: left 7px center;
+}
+
+.contact__link_phon {
+    padding-left: 44px;
+    background: url("../img/footer/call-answer-svg.svg");
+    background-size: 19px;
+    background-repeat: no-repeat;
+    background-position: left 7px center;
+}
+
+.footer-request-social {
+    flex-basis: 271px;
+}
+
+.social-group {
+    margin-top: 31px;
+    padding: 0;
+}
+
+.social-group-item {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 17px;
+}
+
+.social-group-item:first-child {
+    margin-left: 2px;
+}
+
+.social-group-item__link {
+    display: block;
+    background-size: cover;
+}
+
+
+.social-group-item__link svg.icon {
+    width: 35px; /* ширина иконки */
+    height: 35px; /* высота иконки */
+    fill: #b2b9ca; /* цвет заливки иконки */
+    transition: 0.25s; /* плавное изменение цвета при наведении */
+}
+
+.social-group-item__link:hover svg.icon {
+    fill: #ff5e79; /*цвет заливки иконки при наведении*/
+}
+
+/* Скрываем блок SVG-спрайта */
+.hidden {
+    display: none;
+}
+
+.fa:before {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fa098f), to(#f36034));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial;
+}​

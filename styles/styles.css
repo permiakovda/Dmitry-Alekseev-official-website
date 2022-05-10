@@ -1,0 +1,135 @@
+/*
+
+    общие стили для всего документа, а также стили для
+	блоков, элемонтов и модификаторов общих для документа эллементов
+
+*/
+
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body{
+	min-width: 320px;                           
+	margin: 0;                                   
+	
+	font-family: "Roboto", "Arial", sans-serif;            
+	font-size: 16px;                             
+	line-height: normal;                         
+	color: #000;                                
+
+	background-color: #fff;                   
+}
+
+body.modal-active {
+	overflow: hidden;                            
+}
+
+img {
+	max-width: 100%;                             
+}
+
+a {
+	text-decoration: none;                       
+	color: inherit;                              
+}
+
+.visually-hidden {
+	position: absolute !important;               
+	clip: rect(1px 1px 1px 1px); 
+	clip: rect(1px, 1px, 1px, 1px);              
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;                            
+}
+
+
+/*
+
+    описание общих БЭМ сущностей
+
+	fixed-container - контейнер центровщик, используется для формирования полей слева и справа от контента. Регулирует ширину для контента
+    button - основная форма кнопки
+    button_orange - модификатор для изменения вида кнопки с простой на оранжевую
+    flex-wrap - обертка для элементов использующих display: flex
+    flex-wrap_aline-centr - модификация, распределяющая внутренние элементы у flex-обертки по центру (по вертикали)
+	flex-wrap_centr - модификация, выстраивающая внутренние элементы у flex-обертки по центру
+	flex-wrap_centr-initial - НЕ НУЖЕН?!
+	flex-wrap_space-between - модификация, распределяющая внутренние элементы у flex-обертки равномерно по ширине
+    
+*/
+
+.fixed-container {
+	width: 1330px;
+	margin: 0 auto;
+	padding: 0 80px;
+	position: relative;
+	overflow: hidden;
+}
+
+.button {
+	display: block;
+	padding: 12px 40px;
+	text-align: center;
+	border: 1px solid #f53f4f;
+	color: #f53f4f;
+	transition: 0.3s ease;
+	background-color: #fff;
+}
+
+.button:hover{
+	background-color: #ff4e2e;
+	color: #fff;
+}
+
+.button_orange {
+	display: inline-block;
+	padding: 19px 71px;
+	background: #ff4e2e;
+	color: #FFF;
+	font-size: 18px;
+	transition: 0.3s ease;
+}
+
+.button_orange:hover {
+	background-color: #fff;
+	color: #ff4e2e;
+}
+
+.button_footer-request {
+	display: inline-block;
+	padding: 12px 60px;
+}
+
+
+.flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-wrap_aline-centr {
+	align-items: center;
+}
+
+.flex-wrap_centr {
+	justify-content: center;
+}
+
+.flex-wrap_centr-initial {
+	justify-content: center;
+	align-items: initial;
+}
+
+.flex-wrap_space-between {
+	justify-content: space-between;
+}

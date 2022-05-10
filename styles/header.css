@@ -1,0 +1,287 @@
+/*
+
+    стили блоков, элемонтов и модификаторов хидера
+
+    header - отступ сверху для всего хидера и настройка картинки заднего фона
+    nav-menu - флекс-базис для всех пунктов меню, для выстраивания их в строку
+    nav-menu__nav-button - настройки кнопки-гамбургера, при маленьком размере экрана (планшет, мобилка)
+    nav-menu-list - убрать стандартные отступы для списка (возможно лучше перевести в styles для всех списков впринципе?)
+    nav-menu-list__item - настройка отступов для ссылок в главном меню
+    header-phon - настройка визульного оформления ссылки с телефоном
+    header-about-me - большой блок с фотографией, иминим и CTA "узнать больше"
+    header-about-me-txt - перестроение контента (кто первым идет) при изменении размеров экрана для имени и CTA
+    header-about-me-name - настройка визуала имени
+    header-about-me-name__career - настройка визуала для подписи под именем
+    header-about-me__photo - дисплай блок для фотографии (корректировка размеров для фотографии, что бы были точные размеры)
+
+    Летающие тэги:
+    header-flying-tags - все летающие тэги хидера
+    header-flying-tags_bracket
+    header-flying-tags_div 
+    header-flying-tags_octothorpe 
+    header-flying-tags_div_second 
+    header-flying-tags_slash 
+
+
+
+
+*/
+
+.header {
+    padding-top: 29px;
+    background: url(../img/header/back.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 623px) calc(-34%);
+    background-color: #fbfbfb;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav-menu {
+    flex-basis: 315px;
+}
+
+.nav-menu__nav-button {
+    display: none;
+    margin-left: 0px;
+    margin-right: 5px;
+    padding: 22px;
+    border: none;
+    background-color: transparent;
+    background: url(../img/header/HamburgerButton.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.nav-menu-list {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu-list__item {
+    margin-right: 28px;
+    list-style-type: none;
+    display: inline-block;
+    border-bottom: 1px solid rgba(252, 85, 124, 0);
+    transition: 0.3s ease;
+}
+
+.nav-menu-list__item a:hover {
+    color: rgba(252, 85, 124, 1);
+    border-bottom: 1px solid rgba(252, 85, 124, 1);
+}
+
+.nav-menu-list__item:first-child {
+    margin-left: 0;
+}
+
+.header-phon {
+    margin-left: auto;
+    margin-right: 27px;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.header-phon:hover {
+    color: #fc557c;
+}
+
+.header-about-me {
+    padding-top: 57px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-right: -82px;
+}
+
+.header-about-me-txt {
+    order: 1;
+}
+
+.header-about-me-name {
+    font-size: 80px;
+    margin: 0;
+    padding-top: 155px;
+}
+
+.header-about-me-name__career {
+    display: block;
+    font-size: 25px;
+    padding-top: 14px;
+    padding-bottom: 45px;
+    color: #8993ad;
+    letter-spacing: -0.3px;
+}
+
+.header-about-me__photo {
+    display: block;
+}
+
+/*Летающие тэги*/
+.header-flying-tags {
+    position: absolute;
+    color: #f53f4f;
+}
+
+.header-flying-tags_bracket {
+    top: 110px;
+    left: calc(50% - 831px);
+    font-size: 46px;
+    transform: rotate(0.06turn);
+    transform-origin: 200% center;
+    animation: header-flying-tags-bracket-anim 2s 1 ease-in-out;
+}
+
+
+.header-flying-tags_div {
+    top: 139px;
+    left: calc(50% - 171px);
+    font-size: 31px;
+    transform: rotate(0.95turn);
+    transform-origin: 20% center;
+    animation: header-flying-tags-div-anim 4s 1 ease-in-out;
+}
+
+
+.header-flying-tags_octothorpe {
+    top: 306px;
+    left: calc(50% - 714px);
+    font-size: 57px;
+    transform: rotate(0.04turn);
+    transform-origin: 100% center;
+    animation: header-flying-tags-octothorpe-anim 3.5s 1 ease-in-out;
+}
+
+.header-flying-tags_div-second {
+    top: 603px;
+    left: calc(50% - 28px);
+    font-size: 41px;
+    transform: rotate(0.04turn);
+    transform-origin: 500% center;
+    animation: header-flying-tags-div-second-anim 2s 1 ease-in-out;
+}
+
+
+.header-flying-tags_slash {
+    top: 679px;
+    left: calc(50% - 804px);
+    font-size: 40px;
+    transform: rotate( 0.43turn );
+    transform-origin: 250% center;
+    animation: header-flying-tags-slash-anim 3s 1 ease-in-out;
+}
+
+.header-flying-tags_slash-second{
+    display: none;
+}
+
+
+@keyframes header-flying-tags-bracket-anim {
+    from {
+        top: -50px;
+        left: -50px;
+        transform: rotate(1turn);
+    }
+
+    65% {
+        top: 50px;
+        left: 190px;
+    }
+
+    to {
+        top: 110px;
+        left: calc(50% - 831px);
+        font-size: 46px;
+        transform: rotate(0.06turn);
+    }
+}
+
+@keyframes header-flying-tags-div-anim {
+    from {
+        top: 100px;
+        left: 1800px;
+        transform: rotate(0turn);
+    }
+
+    57% {
+        top: 170px;
+        left: 1200px;
+        transform: rotate(1turn);
+    }
+
+    78% {
+        top: 140px;
+        left: 1000px;
+        transform: rotate(0turn);
+    }
+
+    to {
+        top: 139px;
+        left: calc(50% - 171px);
+        font-size: 31px;
+        transform: rotate(0.95turn);
+    }
+}
+
+@keyframes header-flying-tags-octothorpe-anim {
+    from {
+        top: 350px;
+        left: -150px;
+        transform: rotate(0turn);
+    }
+
+    57% {
+        top: 240px;
+        left: 300px;
+    }
+
+    78% {
+        top: 320px;
+        left: 320px;
+    }
+
+    to {
+        top: 306px;
+        left: calc(50% - 714px);
+        transform: rotate(5turn);
+        transform-origin: 10% center;
+    }
+}
+
+@keyframes header-flying-tags-div-second-anim {
+    from {
+        top: 100px;
+        left: 1800px;
+        transform: rotate(-1turn);
+    }
+
+    to {
+        top: 603px;
+        left: calc(50% - 28px);
+        font-size: 41px;
+        transform: rotate(0.04turn);
+    }
+}
+
+@keyframes header-flying-tags-slash-anim {
+    from {
+        top: 400px;
+        left: -50px;
+        transform: rotate(1turn);
+    }
+
+    65% {
+        top: 550px;
+        left: 510px;
+    }
+
+    to {
+        top: 679px;
+        left: calc(50% - 804px);
+        font-size: 40px;
+        transform: rotate( 0.43turn );
+    }
+}

@@ -1,0 +1,9 @@
+.nav-menu-list__item{
+    margin-right: 28px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav-menu-list__item:first-child{
+    margin-left: 0;
+}
