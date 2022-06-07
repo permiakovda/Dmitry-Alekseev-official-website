@@ -84,7 +84,8 @@ a {
 	border: 1px solid #f53f4f;
 	color: #f53f4f;
 	transition: 0.3s ease;
-	background-color: #fff;
+	background-color: #fff0;
+	cursor: pointer;
 }
 
 .button:hover{

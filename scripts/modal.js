@@ -1,21 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    //var modal = $modal({
-    //    title: 'Текст заголовка',
-    //    content: '<p>Содержимое модального окна...</p>',
-    //    footerButtons: [
-    //        { class: 'btn btn__cancel', text: 'Отмена', handler: 'modalHandlerCancel' },
-    //        { class: 'btn btn__ok', text: 'ОК', handler: 'modalHandlerOk' }
-    //    ]
-    //});
-
-    //var modal = $modal();
-
-    //document.addEventListener('click', function (e) {
-    //    if (e.target.dataset.toggle === 'modal') {
-    //        modal.show();
-    //    }
-    //});
-
     $modal = function (options) {
         var
             _elemModal,
@@ -35,8 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 modalFooterHTML = '';
 
             elemModal.classList.add('modal');
-            modalHTML = modalTemplate.replace('{{title}}', options.title || 'Новое окно');
+            modalHTML = modalTemplate.replace('{{title}}', options.title || 'Остались вопросы?');
             modalHTML = modalHTML.replace('{{content}}', options.content || '');
+
             if (options.footerButtons) {
                 for (var i = 0, length = options.footerButtons.length; i < length; i++) {
                     var modalFooterButton = modalButtonTemplate.replace('{{button_class}}', options.footerButtons[i].class);
@@ -46,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 modalFooterHTML = modalFooterTemplate.replace('{{buttons}}', modalFooterHTML);
             }
+
             modalHTML = modalHTML.replace('{{footer}}', modalFooterHTML);
             elemModal.innerHTML = modalHTML;
             document.body.appendChild(elemModal);
@@ -103,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
     (function () {
         // создаём модальное окно
         var modal = $modal({
-            content: 'Содержимое модального окна...'
+            content: '<form method="POST"><div class="form-content"><div><input class="form-content__field" type="text" value="" name="NAME" placeholder="Имя" required=""></div><div><input class="form-content__field" type="text" value="" name="PHONE" placeholder="Телефон" required=""></div><div><input class="form-content__field" type="email" value="" name="EMAIL" placeholder="Ваш почтовый адрес" required=""></div><div><input class="button button_orange button_w1024" type="submit" value="Жду звонка"></div></div></form>'
         });
         // при клике на документ
         document.addEventListener('click', function (e) {
@@ -112,7 +97,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     })();
-
 
 });
 

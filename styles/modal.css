@@ -92,3 +92,40 @@
     border-bottom-right-radius: 0.3rem;
     border-bottom-left-radius: 0.3rem;
 }
+
+.form-content {
+    text-align: center;
+}
+
+.form-content__field {
+    color: #333;
+    padding: 10px 14px;
+    box-sizing: border-box;
+    outline: 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -.4px;
+    border: 2px solid #dfdfdf;
+    border-radius: 6px;
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-content__field-btn {
+    align-items: center;
+    outline: 0;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -.19px;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 24px;
+    background-color: #ff4e2e;
+    cursor: pointer;
+    margin: 0 auto;
+}

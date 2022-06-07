@@ -60,17 +60,20 @@
 }
 
 .nav-menu-list__item {
-    margin-right: 28px;
     list-style-type: none;
     display: inline-block;
+}
+
+.nav-menu-list__link {
+    margin-right: 28px;
     border-bottom: 1px solid rgba(252, 85, 124, 0);
     transition: 0.3s ease;
 }
 
-.nav-menu-list__item a:hover {
-    color: rgba(252, 85, 124, 1);
-    border-bottom: 1px solid rgba(252, 85, 124, 1);
-}
+    .nav-menu-list__link:hover {
+        color: rgba(252, 85, 124, 1);
+        border-bottom: 1px solid rgba(252, 85, 124, 1);
+    }
 
 .nav-menu-list__item:first-child {
     margin-left: 0;

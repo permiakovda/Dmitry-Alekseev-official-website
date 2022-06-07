@@ -52,11 +52,15 @@ const swiper = new Swiper('.swiper-container', {
     //брейкпойнты (адаптивность)
     breakpoints: {
         320: {
-            
+            slidesPerView: 1,
+        },
+
+        720: {
+            slidesPerView: 2,
         },
 
         1370: {
-
+            slidesPerView: 3,
         },
     },
 });
