@@ -55,13 +55,25 @@
     font-size: 19px;
     margin-bottom: 10px;
     color: #8993ad;
+<<<<<<< HEAD
+    transition: 0.3s ease;
+}
+
+.footer-nav__item:hover {
+    color: rgba(252, 85, 124, 1);
+=======
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
 }
 
 .footer-contacts {
     flex-basis: 390px;
     margin: 0;
     margin-top: 5px;
+<<<<<<< HEAD
+    margin-left: 70px;
+=======
     margin-left: 85px;
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
     padding: 0;
     font-size: 25px;
     list-style-type: none;
@@ -79,6 +91,14 @@
 
 .contact__link {
     font-style: normal;
+<<<<<<< HEAD
+    transition: 0.3s ease;
+}
+
+.contact__link:hover {
+    color: #fc557c;
+=======
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
 }
 
 .contact__link_mail {
@@ -118,6 +138,11 @@
 
 .social-group-item__link {
     display: block;
+<<<<<<< HEAD
+    background-size: cover;
+}
+
+=======
     /*padding: 17px;*/
     background-size: cover;
 }
@@ -141,6 +166,7 @@
     background: url("../img/footer/instagram-social-network-logo-of-photo-camera-svg.svg");
     background-size: cover;
 }*/
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
 
 .social-group-item__link svg.icon {
     width: 35px; /* ширина иконки */
@@ -163,6 +189,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: initial;
+<<<<<<< HEAD
+}​
+=======
 }
 
 ​
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18

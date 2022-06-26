@@ -66,7 +66,11 @@
     background: linear-gradient( 11deg, #ff8f5a 11%, #ff2f96);
     padding-top: 75px;
     padding-bottom: 64px;
+<<<<<<< HEAD
+    overflow: hidden;
+=======
 
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
     position: relative;
 }
 
@@ -124,8 +128,17 @@
 }
 
 .swiper-container {
+<<<<<<< HEAD
+/*
+    пока отключу для интеграции swiper
+    position: relative;
+    z-index: 1;*/
+
+    overflow: hidden;
+=======
     position: relative;
     z-index: 1;
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
 }
 
 .swiper-wrapper {
@@ -167,9 +180,21 @@
 }
 
 .swiper-button__type_next {
+<<<<<<< HEAD
+    /*пока отключу для интеграции слайдера
+        top: 113px;
+    right: -37px;*/
+
+    right: 67px;
+    top: 312px;
+    transform: rotate( 180deg );
+    box-shadow: 0px 0px 37px 10px rgba(34, 60, 80, 0.2);
+    border-radius: 36px;
+=======
     top: 113px;
     right: -37px;
     transform: rotate( 180deg );
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
 }
 
 .swiper-button__type_next:after {
@@ -177,8 +202,19 @@
 }
 
 .swiper-button__type_prev {
+<<<<<<< HEAD
+    /*пока отключу для интеграции слайдера
+        top: 117px;
+    left: -37px;*/
+
+    left: 64px;
+    top: 317px;
+    box-shadow: 0px 0px 37px 10px rgba(34, 60, 80, 0.2);
+    border-radius: 36px;
+=======
     top: 117px;
     left: -37px;
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
 }
 
 .swiper-button__type_prev:after {
@@ -214,42 +250,66 @@
     летающие тэги асайда
 */
 
+<<<<<<< HEAD
+.aside-flying-tags {
+=======
 .aside-flying-tags_all {
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
     position: absolute;
     color: #fff;
 }
 
 .aside-flying-tags_bracket {
     top: 12px;
+<<<<<<< HEAD
+    left: calc(50% - 831px);
+=======
     left: 165px;
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
     font-size: 46px;
     transform: rotate(0.06turn);
     animation: aside-flying-tags_bracket-anim 2s 1 ease-in-out;
 }
 .aside-flying-tags_div {
     top: 258px;
+<<<<<<< HEAD
+    left: calc(50% + 459px);
+=======
     left: 1455px;
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
     font-size: 41px;
     transform: rotate(0.06turn);
     animation: aside-flying-tags_div-anim 2s 1 ease-in-out;
 }
 .aside-flying-tags_octothorpe {
     top: 198px;
+<<<<<<< HEAD
+    left: calc(50% - 716px);
+=======
     left: 282px;
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
     font-size: 50px;
     transform: rotate(0.06turn);
     animation: aside-flying-tags_octothorpe-anim 2s 1 ease-in-out;
 }
 .aside-flying-tags_bracket-second {
     top: 211px;
+<<<<<<< HEAD
+    left: calc(50% + 809px);
+=======
     left: 1802px;
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
     font-size: 46px;
     transform: rotate( -0.05turn );
     animation: aside-flying-tags_bracket-second-anim 2s 1 ease-in-out;
 }
 .aside-flying-tags_slash {
     top: 32px;
+<<<<<<< HEAD
+    left: calc(50% + 699px);
+=======
     left: 1690px;
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
     font-size: 41px;
     transform: rotate( 0.95turn );
     animation: aside-flying-tags_slash-anim 2s 1 ease-in-out;
@@ -264,7 +324,11 @@
 
     to {
         top: 12px;
+<<<<<<< HEAD
+        left: calc(50% - 831px);
+=======
         left: 165px;
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
         transform: rotate(0.06turn);
     }
 }
@@ -277,7 +341,11 @@
 
     to {
         top: 258px;
+<<<<<<< HEAD
+        left: calc(50% + 459px);
+=======
         left: 1455px;
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
         transform: rotate(0.06turn);
     }
 }
@@ -290,7 +358,11 @@
 
     to {
         top: 198px;
+<<<<<<< HEAD
+        left: calc(50% - 716px);
+=======
         left: 282px;
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
         transform: rotate(0.06turn);
     }
 }
@@ -303,7 +375,11 @@
 
     to {
         top: 211px;
+<<<<<<< HEAD
+        left: calc(50% + 809px);
+=======
         left: 1802px;
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
         transform: rotate( -0.05turn );
     }
 }
@@ -316,6 +392,10 @@
 
     to {
         top: 32px;
+<<<<<<< HEAD
+        left: calc(50% + 699px);
+=======
         left: 1690px;
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
     }
 }

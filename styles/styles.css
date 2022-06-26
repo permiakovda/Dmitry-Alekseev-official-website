@@ -8,6 +8,11 @@
 
 html {
 	box-sizing: border-box;
+<<<<<<< HEAD
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+=======
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
 }
 
 *,
@@ -16,6 +21,17 @@ html {
 	box-sizing: inherit;
 }
 
+<<<<<<< HEAD
+body {
+	min-width: 320px;
+	margin: 0;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: normal;
+	color: #000;
+	background-color: #fff;
+	overflow-x: hidden;
+=======
 body{
 	min-width: 320px;                           
 	margin: 0;                                   
@@ -26,6 +42,7 @@ body{
 	color: #000;                                
 
 	background-color: #fff;                   
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
 }
 
 body.modal-active {
@@ -72,8 +89,13 @@ a {
 	width: 1330px;
 	margin: 0 auto;
 	padding: 0 80px;
+<<<<<<< HEAD
+	position: relative;
+	overflow: hidden;
+=======
 
 	position: relative;
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
 }
 
 .button {
@@ -82,6 +104,17 @@ a {
 	text-align: center;
 	border: 1px solid #f53f4f;
 	color: #f53f4f;
+<<<<<<< HEAD
+	transition: 0.3s ease;
+	background-color: #fff0;
+	cursor: pointer;
+}
+
+.button:hover{
+	background-color: #ff4e2e;
+	color: #fff;
+=======
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
 }
 
 .button_orange {
@@ -90,7 +123,18 @@ a {
 	background: #ff4e2e;
 	color: #FFF;
 	font-size: 18px;
+<<<<<<< HEAD
+	transition: 0.3s ease;
 }
+
+.button_orange:hover {
+	background-color: #fff;
+	color: #ff4e2e;
+}
+
+=======
+}
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
 .button_footer-request {
 	display: inline-block;
 	padding: 12px 60px;

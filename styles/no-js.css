@@ -9,12 +9,28 @@
     
 }
 
+<<<<<<< HEAD
+@media (max-width: 1023px) {
+=======
 @media (max-width: 768px) {
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
     
     .no-js .menu-open__closed{
 
     }
 
+<<<<<<< HEAD
+    .no-js .nav-menu-list {
+        /*display: block;*/
+        min-height: auto;
+        height: auto;
+        padding: 20px;
+        opacity: 1;
+        transition: 1s;
+    }
+
+=======
+>>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
     .no-js main{
 
     }
