@@ -1,9 +1,0 @@
-.swiper-button__type_next {
-    top: 113px;
-    right: -37px;
-    transform: rotate( 180deg );
-}
-
-    .swiper-button__type_next:after {
-        content: url(../../../../../img/main/arrow.png);
-    }

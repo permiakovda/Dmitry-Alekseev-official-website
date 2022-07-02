@@ -15,11 +15,7 @@
     header-about-me__photo - дисплай блок для фотографии (корректировка размеров для фотографии, что бы были точные размеры)
 
     Летающие тэги:
-<<<<<<< HEAD
     header-flying-tags - все летающие тэги хидера
-=======
-    header-flying-tags_all - все летающие тэги хидера
->>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
     header-flying-tags_bracket
     header-flying-tags_div 
     header-flying-tags_octothorpe 
@@ -35,15 +31,10 @@
     padding-top: 29px;
     background: url(../img/header/back.svg);
     background-repeat: no-repeat;
-<<<<<<< HEAD
     background-position: calc(50% + 623px) calc(-34%);
     background-color: #fbfbfb;
     overflow: hidden;
     position: relative;
-=======
-    background-position: calc(50% + 555px) bottom;
-    background-color: #fbfbfb;
->>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
 }
 
 .nav-menu {
@@ -61,10 +52,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-<<<<<<< HEAD
     cursor: pointer;
-=======
->>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
 }
 
 .nav-menu-list {
@@ -73,7 +61,6 @@
 }
 
 .nav-menu-list__item {
-<<<<<<< HEAD
     list-style-type: none;
     display: inline-block;
 }
@@ -88,18 +75,6 @@
         color: rgba(252, 85, 124, 1);
         border-bottom: 1px solid rgba(252, 85, 124, 1);
     }
-=======
-    margin-right: 28px;
-    list-style-type: none;
-    display: inline-block;
-    border-bottom: 1px solid rgba(252, 85, 124, 0);
-}
-
-.nav-menu-list__item:hover {
-    color: rgba(252, 85, 124, 1);
-    border-bottom: 1px solid rgba(252, 85, 124, 1);
-}
->>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
 
 .nav-menu-list__item:first-child {
     margin-left: 0;
@@ -110,14 +85,11 @@
     margin-right: 27px;
     font-size: 25px;
     font-weight: bold;
-<<<<<<< HEAD
     transition: 0.3s ease;
 }
 
 .header-phon:hover {
     color: #fc557c;
-=======
->>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
 }
 
 .header-about-me {
@@ -153,23 +125,14 @@
 }
 
 /*Летающие тэги*/
-<<<<<<< HEAD
 .header-flying-tags {
-=======
-.header-flying-tags_all {
->>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
     position: absolute;
     color: #f53f4f;
 }
 
 .header-flying-tags_bracket {
-<<<<<<< HEAD
     top: 110px;
     left: calc(50% - 831px);
-=======
-    top: 89px;
-    left: 164px;
->>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
     font-size: 46px;
     transform: rotate(0.06turn);
     transform-origin: 200% center;
@@ -178,13 +141,8 @@
 
 
 .header-flying-tags_div {
-<<<<<<< HEAD
     top: 139px;
     left: calc(50% - 171px);
-=======
-    top: 134px;
-    left: 819px;
->>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
     font-size: 31px;
     transform: rotate(0.95turn);
     transform-origin: 20% center;
@@ -193,13 +151,8 @@
 
 
 .header-flying-tags_octothorpe {
-<<<<<<< HEAD
     top: 306px;
     left: calc(50% - 714px);
-=======
-    top: 304px;
-    left: 278px;
->>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
     font-size: 57px;
     transform: rotate(0.04turn);
     transform-origin: 100% center;
@@ -207,13 +160,8 @@
 }
 
 .header-flying-tags_div-second {
-<<<<<<< HEAD
     top: 603px;
     left: calc(50% - 28px);
-=======
-    top: 495px;
-    left: 981px;
->>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
     font-size: 41px;
     transform: rotate(0.04turn);
     transform-origin: 500% center;
@@ -222,13 +170,8 @@
 
 
 .header-flying-tags_slash {
-<<<<<<< HEAD
     top: 679px;
     left: calc(50% - 804px);
-=======
-    top: 630px;
-    left: 411px;
->>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
     font-size: 40px;
     transform: rotate( 0.43turn );
     transform-origin: 250% center;
@@ -253,18 +196,10 @@
     }
 
     to {
-<<<<<<< HEAD
         top: 110px;
         left: calc(50% - 831px);
         font-size: 46px;
         transform: rotate(0.06turn);
-=======
-        top: 89px;
-        left: 164px;
-        font-size: 46px;
-        transform: rotate(0.06turn);
-        
->>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
     }
 }
 
@@ -288,13 +223,8 @@
     }
 
     to {
-<<<<<<< HEAD
         top: 139px;
         left: calc(50% - 171px);
-=======
-        top: 134px;
-        left: 819px;
->>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
         font-size: 31px;
         transform: rotate(0.95turn);
     }
@@ -318,13 +248,8 @@
     }
 
     to {
-<<<<<<< HEAD
         top: 306px;
         left: calc(50% - 714px);
-=======
-        top: 304px;
-        left: 278px;
->>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
         transform: rotate(5turn);
         transform-origin: 10% center;
     }
@@ -338,13 +263,8 @@
     }
 
     to {
-<<<<<<< HEAD
         top: 603px;
         left: calc(50% - 28px);
-=======
-        top: 495px;
-        left: 981px;
->>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
         font-size: 41px;
         transform: rotate(0.04turn);
     }
@@ -363,13 +283,8 @@
     }
 
     to {
-<<<<<<< HEAD
         top: 679px;
         left: calc(50% - 804px);
-=======
-        top: 630px;
-        left: 411px;
->>>>>>> 28446da9ced29e3f296886508e2004adeea3cd18
         font-size: 40px;
         transform: rotate( 0.43turn );
     }
